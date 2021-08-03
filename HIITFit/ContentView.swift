@@ -34,14 +34,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("welcome")
+        TabView {
+            Text("Welcome")
+                .tabItem { Text("Welcome") }
             Text("exercice 1")
+                .tabItem { Text("Exercice 1") }
             Text("exercice 2")
+                .tabItem { Text("Exercise 2") }
         }
+        .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
     }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
