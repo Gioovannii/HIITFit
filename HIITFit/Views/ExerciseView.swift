@@ -56,21 +56,3 @@ struct ExerciseView_Previews: PreviewProvider {
         ExerciseView(index: 0)
     }
 }
-
-struct HeaderView: View {
-    let exerciseName: String
-    var body: some View {
-        VStack {
-            Text(exerciseName)
-                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-            
-            HStack {
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
-                Image(systemName: "4.circle")
-            }
-            .font(.title2)
-        }
-    }
-}
