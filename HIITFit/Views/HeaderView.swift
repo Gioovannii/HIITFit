@@ -52,7 +52,13 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        HeaderView(exerciseName: "Squat")
-            .previewLayout(.sizeThatFits)
+        Group {
+            HeaderView(exerciseName: "Squat")
+                .previewLayout(.sizeThatFits)
+            HeaderView(exerciseName: "Squat")
+                .preferredColorScheme(.dark)
+                .environment(\.sizeCategory, .accessibilityLarge)
+                .previewLayout(.sizeThatFits)
+        }
     }
 }
