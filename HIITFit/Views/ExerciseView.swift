@@ -41,13 +41,14 @@ struct ExerciseView: View {
     let interval: TimeInterval = 30
     
     var body: some View {
-        VStack {
-            HeaderView(exerciseName: exerciseNames[index])
-            if let url = Bundle.main.url(forResource: videoNames[index], withExtension: "mp4") {
-                VideoPlayer(player: AVPlayer(url: url))
-            } else {
-                Text("Couldn't find \(videoNames[index]).mp4")
-                    .foregroundColor(.red)
+        GeometryReader { geometry in
+            VStack {
+                HeaderView(exerciseName: exerciseNames[index])
+                    .padding(.bottom)
+                if let url = Bundle.main.url(forResource: videoNames[index], withExtension: "mp4") {
+                    VideoPlayer(player: AVPlayer(url: url))
+                        .frame(height: geometry.size.height * 0.45)
+              
             }
             Text("Timer")
             Text("Start/Done button")
