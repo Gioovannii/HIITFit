@@ -48,12 +48,7 @@ struct ExerciseView: View {
                 if let url = Bundle.main.url(forResource: videoNames[index], withExtension: "mp4") {
                     VideoPlayer(player: AVPlayer(url: url))
                         .frame(height: geometry.size.height * 0.45)
-              
             }
-            Text("Timer")
-            Text("Start/Done button")
-            Text("Rating")
-            Text("History button")
             
         }
     }
