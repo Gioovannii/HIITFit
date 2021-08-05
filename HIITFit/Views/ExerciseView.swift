@@ -38,6 +38,8 @@ struct ExerciseView: View {
     let exerciseNames = ["Squat", "Step up", "Burpee", "Sun Salute"]
     
     let index: Int
+    let interval: TimeInterval = 30
+    
     var body: some View {
         VStack {
             HeaderView(exerciseName: exerciseNames[index])
