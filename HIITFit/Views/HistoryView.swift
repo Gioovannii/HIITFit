@@ -42,7 +42,12 @@ struct HistoryView: View {
     
     
     var body: some View {
-        
+        VStack {
+            Text("History")
+                .font(.title)
+                .padding()
+            // Exercise history
+        }
     }
 }
 
