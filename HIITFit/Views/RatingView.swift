@@ -46,7 +46,14 @@ struct RatingView: View {
 
 struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
-        RatingView()
-            .previewLayout(.sizeThatFits)
+        Group {
+            RatingView()
+                .previewLayout(.sizeThatFits)
+            RatingView()
+                .preferredColorScheme(.dark)
+                .environment(\.sizeCategory, .extraLarge)
+                .previewLayout(.sizeThatFits)
+        }
+            
     }
 }
