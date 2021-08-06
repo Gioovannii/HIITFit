@@ -35,7 +35,7 @@ import SwiftUI
 struct WelcomeView: View {
     var body: some View {
         ZStack {
-            HStack {
+            HStack(alignment: .bottom) {
                 VStack(alignment: .leading) {
                     Text("Get fit")
                         .font(.largeTitle)
