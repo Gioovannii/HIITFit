@@ -34,7 +34,15 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-       
+        ZStack {
+            HStack {
+                VStack {
+                    Text("Get fit")
+                        .font(.largeTitle)
+                    Text("with high intensity interval training")
+                        .font(.headline)
+                }
+            }
             VStack {
                 HeaderView(titleText: "Welcome")
                 Spacer()
