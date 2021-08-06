@@ -34,7 +34,14 @@ import SwiftUI
 
 struct WelcomeView: View {
     var body: some View {
-        HeaderView(titleText: "Welcome")
+       
+            VStack {
+                HeaderView(titleText: "Welcome")
+                Spacer()
+                Button("History") {}
+                    .padding(.bottom)
+            }
+        }
     }
 }
 
