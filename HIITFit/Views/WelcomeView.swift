@@ -36,12 +36,13 @@ struct WelcomeView: View {
     var body: some View {
         ZStack {
             HStack {
-                VStack {
+                VStack(alignment: .leading) {
                     Text("Get fit")
                         .font(.largeTitle)
                     Text("with high intensity interval training")
                         .font(.headline)
                 }
+                Image("step-up") // your new code appear here
             }
             VStack {
                 HeaderView(titleText: "Welcome")
