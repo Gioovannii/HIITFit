@@ -42,7 +42,11 @@ struct WelcomeView: View {
                     Text("with high intensity interval training")
                         .font(.headline)
                 }
-                Image("step-up") // your new code appear here
+                Image("step-up")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 240.0, height: 240.0)
+                    .clipShape(Circle()) 
             }
             VStack {
                 HeaderView(titleText: "Welcome")
