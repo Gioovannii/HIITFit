@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B8D91A026BE909D003A60E8 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8D919F26BE909D003A60E8 /* SuccessView.swift */; };
+		7B998E6226BEE06D0048EF6F /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998E6126BEE06D0048EF6F /* Exercise.swift */; };
 		7BA10BAB26BAA13B003B9817 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA10BAA26BAA13B003B9817 /* WelcomeView.swift */; };
 		7BA10BAD26BAA150003B9817 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA10BAC26BAA150003B9817 /* ExerciseView.swift */; };
 		7BA10BB026BAD7FD003B9817 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA10BAF26BAD7FD003B9817 /* HeaderView.swift */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		7B8D919F26BE909D003A60E8 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		7B998E6126BEE06D0048EF6F /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		7BA10BAA26BAA13B003B9817 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7BA10BAC26BAA150003B9817 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		7BA10BAF26BAD7FD003B9817 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
 				7BA10BAA26BAA13B003B9817 /* WelcomeView.swift */,
 				7BA10BAC26BAA150003B9817 /* ExerciseView.swift */,
+				7B998E6126BEE06D0048EF6F /* Exercise.swift */,
 				7B8D919F26BE909D003A60E8 /* SuccessView.swift */,
 				7BA10BB326BBE00A003B9817 /* HistoryView.swift */,
 				7BA10BB126BB0CBA003B9817 /* RatingView.swift */,
@@ -223,6 +226,7 @@
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
 				7BA10BB226BB0CBA003B9817 /* RatingView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
+				7B998E6226BEE06D0048EF6F /* Exercise.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
 				CD30C94025147A8C0049DB93 /* ImageExtension.swift in Sources */,
 				7BA10BB426BBE00A003B9817 /* HistoryView.swift in Sources */,
