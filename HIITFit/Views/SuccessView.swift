@@ -34,7 +34,25 @@ import SwiftUI
 
 struct SuccessView: View {
     var body: some View {
-      
+        ZStack {
+            VStack {
+                Image(systemName: "hand.raised.fill")
+                    .resizedToFill(width: 75, height: 75)
+                    .foregroundColor(Color.purple)
+                
+                Text("High Five!")
+                    .font(.largeTitle)
+                    .fontWeight(.heavy)
+                Text("good job completing all your exercises! \n Remember tomorrow's another day. \n So eat well and get some rest")
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.gray)
+            }
+            VStack {
+                Spacer()
+                Button("Continue") {}
+                    .padding(.bottom)
+            }
+        }
     }
 }
 
