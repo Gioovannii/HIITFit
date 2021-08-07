@@ -50,16 +50,20 @@ struct WelcomeView: View {
                         Text("with high intensity interval training")
                             .font(.headline)
                     }
-                        Image("step-up")
-                            .resizedToFill(width: 240.0, height: 240.0)
-                            .clipShape(Circle())
+                    Image("step-up")
+                        .resizedToFill(width: 240.0, height: 240.0)
+                        .clipShape(Circle())
                 }
-                    Button(action: { }) {
-                        Text("Get started")
-                        Image(systemName: "arrow.right.circle")
+                Button(action: { }) {
+                    Text("Get started")
+                    Image(systemName: "arrow.right.circle")
                 }
                 .font(.title2)
                 .padding()
+                .background(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.gray, lineWidth: 2))
+                
                 
             }
         }
