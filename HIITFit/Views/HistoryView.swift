@@ -35,9 +35,6 @@ import SwiftUI
 struct HistoryView: View {
     let history = HistoryStore()
     
-    //    let today = Date()
-    //    let yesterday = Date().addingTimeInterval(-86400)
-    
     let exercises1 = ["Squat", "Step Up", "Burpee", "Sun Salute"]
     let exercises2 = ["Squat", "Step Up", "Burpee"]
     
