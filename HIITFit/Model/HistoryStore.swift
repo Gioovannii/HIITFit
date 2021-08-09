@@ -45,10 +45,7 @@ struct HistoryStore {
 extension HistoryStore {
     mutating func createDevData() {
         // development data
-        exerciseDays = [
-            ExerciseDay(
-                date:
-                    Date().addingTimeInterval(-86400),
+        exerciseDays = [ExerciseDay(date: Date().addingTimeInterval(-86400),
                         exercises: [
                             Exercise.exercises[0].exerciseName,
                             Exercise.exercises[1].exerciseName,
