@@ -41,3 +41,14 @@ struct ExerciseDay: Identifiable {
 struct HistoryStore {
     var exerciseDays = [ExerciseDay]()
 }
+
+extension HistoryStore {
+    mutating func createDevData() {
+        // development data
+        exerciseDays = [
+            ExerciseDay(date: Date().addingTimeInterval(-86400),
+                        exercises: [
+                            Exercise.exercises[0].exerciseName,
+                        ])]
+    }
+}
