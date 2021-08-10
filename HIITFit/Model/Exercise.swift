@@ -59,10 +59,10 @@ struct Exercise {
 
 extension Exercise {
     static let exercises = [
-        Exercise(exerciseName: ExerciseEnum.squat.rawValue, videoName: "squat"),
-        Exercise(exerciseName: ExerciseEnum.stepUp.rawValue, videoName: "step-up"),
-        Exercise(exerciseName: ExerciseEnum.burpee.rawValue, videoName: "burpee"),
-        Exercise(exerciseName: ExerciseEnum.sunSalute.rawValue, videoName: "sun-salute")
+        Exercise(exerciseName: ExerciseEnum.squat.description, videoName: "squat"),
+        Exercise(exerciseName: ExerciseEnum.stepUp.description, videoName: "step-up"),
+        Exercise(exerciseName: ExerciseEnum.burpee.description, videoName: "burpee"),
+        Exercise(exerciseName: ExerciseEnum.sunSalute.description, videoName: "sun-salute")
 
     ]
 }
