@@ -40,7 +40,20 @@ struct Exercise {
         case squat
         case stepUp
         case burpee
-        case sunSalute 
+        case sunSalute
+        
+        var description: String {
+            switch self {
+            case .squat:
+                return NSLocalizedString("squat", comment: "exercise")
+            case .stepUp:
+                return NSLocalizedString("Step Up", comment: "exercise")
+            case .burpee:
+                return NSLocalizedString("Burpee", comment: "exercise")
+            case .sunSalute:
+                return NSLocalizedString("Sun Salute", comment: "yoga stretch")
+            }
+        }
     }
 }
 
