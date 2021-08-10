@@ -11,6 +11,7 @@
 		7B998E6226BEE06D0048EF6F /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998E6126BEE06D0048EF6F /* Exercise.swift */; };
 		7B998E6426BEE57E0048EF6F /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998E6326BEE57E0048EF6F /* HistoryStore.swift */; };
 		7B998E6726C187BF0048EF6F /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B998E6626C187BF0048EF6F /* HistoryStoreDevData.swift */; };
+		7B998E6A26C2AECC0048EF6F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7B998E6C26C2AECC0048EF6F /* Localizable.strings */; };
 		7BA10BAB26BAA13B003B9817 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA10BAA26BAA13B003B9817 /* WelcomeView.swift */; };
 		7BA10BAD26BAA150003B9817 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA10BAC26BAA150003B9817 /* ExerciseView.swift */; };
 		7BA10BB026BAD7FD003B9817 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA10BAF26BAD7FD003B9817 /* HeaderView.swift */; };
@@ -33,6 +34,7 @@
 		7B998E6126BEE06D0048EF6F /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		7B998E6326BEE57E0048EF6F /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		7B998E6626C187BF0048EF6F /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
+		7B998E6B26C2AECC0048EF6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		7BA10BAA26BAA13B003B9817 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		7BA10BAC26BAA150003B9817 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		7BA10BAF26BAD7FD003B9817 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				CD30C923251474DC0049DB93 /* HIITFitApp.swift */,
+				7B998E6C26C2AECC0048EF6F /* Localizable.strings */,
 				7BA10BAE26BAA168003B9817 /* Views */,
 				CD30C93D25147A8C0049DB93 /* DateExtension.swift */,
 				CD30C93E25147A8C0049DB93 /* ImageExtension.swift */,
@@ -200,6 +203,7 @@
 				CD30C94825147AEF0049DB93 /* squat.mp4 in Resources */,
 				CD30C94725147AEF0049DB93 /* burpee.mp4 in Resources */,
 				CD30C92B251474DD0049DB93 /* Preview Assets.xcassets in Resources */,
+				7B998E6A26C2AECC0048EF6F /* Localizable.strings in Resources */,
 				CD30C928251474DD0049DB93 /* Assets.xcassets in Resources */,
 				CD30C94925147AEF0049DB93 /* sun-salute.mp4 in Resources */,
 				CD30C94625147AEF0049DB93 /* step-up.mp4 in Resources */,
@@ -251,6 +255,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7B998E6C26C2AECC0048EF6F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B998E6B26C2AECC0048EF6F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CD30C92D251474DD0049DB93 /* Debug */ = {
