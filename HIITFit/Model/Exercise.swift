@@ -63,6 +63,5 @@ extension Exercise {
         Exercise(exerciseName: ExerciseEnum.stepUp.description, videoName: "step-up"),
         Exercise(exerciseName: ExerciseEnum.burpee.description, videoName: "burpee"),
         Exercise(exerciseName: ExerciseEnum.sunSalute.description, videoName: "sun-salute")
-
     ]
 }
