@@ -55,7 +55,7 @@ struct WelcomeView: View {
                         .clipShape(Circle())
                 }
                 Button(action: { }) {
-                    Text("Get started")
+                    Text(NSLocalizedString("Get started", comment: "invitation"))
                     Image(systemName: "arrow.right.circle")
                 }
                 .font(.title2)
