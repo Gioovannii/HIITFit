@@ -59,7 +59,7 @@ struct ExerciseView: View {
                     .padding()
                 Spacer()
                                 
-                Button("History") { }
+                Button(NSLocalizedString("History", comment: "view user activity")) { }
                     .padding(.bottom)
 
             }
