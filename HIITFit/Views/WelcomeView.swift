@@ -45,7 +45,7 @@ struct WelcomeView: View {
             VStack {
                 HStack(alignment: .bottom) {
                     VStack(alignment: .leading) {
-                        Text("Get fit")
+                        Text(NSLocalizedString("Get fit", comment: "invitation to exercise"))
                             .font(.largeTitle)
                         Text("with high intensity interval training")
                             .font(.headline)
