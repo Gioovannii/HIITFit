@@ -40,7 +40,8 @@ struct ContentView: View {
             WelcomeView(selectedTab: $selectedTab)
                 .tag(9)
             ForEach(0..<Exercise.exercises.count) { index in
-                ExerciseView(index: index)
+                ExerciseView(selectedTab: $selectedTab, index: index)
+                    .tag(index)
             }
         }
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
