@@ -33,6 +33,7 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @Binding var selectedTab: Int
     var body: some View {
         ZStack {
             VStack {
