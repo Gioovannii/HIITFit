@@ -70,7 +70,7 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(index: 0)
+        ExerciseView(selectedTab: .constant(1), index: 0)
             .previewLayout(.sizeThatFits)
     }
 }
