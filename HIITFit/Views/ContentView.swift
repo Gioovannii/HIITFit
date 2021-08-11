@@ -35,7 +35,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Text("Welcome")
+            WelcomeView()
             ForEach(0..<Exercise.exercises.count) { index in
                 ExerciseView(index: index)
             }
