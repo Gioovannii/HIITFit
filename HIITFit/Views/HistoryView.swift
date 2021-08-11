@@ -56,7 +56,7 @@ struct HistoryView: View {
                     ForEach(history.exerciseDays) { day in
                         Section(
                             header:
-                                Text(day.date.formatted(as: "MMMd"))
+                                Text(day.date.formatted(as: "MMM d"))
                                 .font(.headline)) {
                             ForEach(day.exercises, id: \.self) { exercise in
                                 Text(exercise)
