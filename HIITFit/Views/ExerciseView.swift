@@ -34,6 +34,7 @@ import SwiftUI
 import AVKit
 
 struct ExerciseView: View {
+    @Binding var selectedTab: Int
     let index: Int
     let interval: TimeInterval = 30
     
