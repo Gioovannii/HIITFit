@@ -33,6 +33,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    // self own this property which is the single source of truth
+    @State private var selectedTab = 9
     var body: some View {
         TabView {
             WelcomeView()
