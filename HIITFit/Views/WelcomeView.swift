@@ -55,7 +55,7 @@ struct WelcomeView: View {
                         .resizedToFill(width: 240.0, height: 240.0)
                         .clipShape(Circle())
                 }
-                Button(action: { }) {
+                Button(action: { selectedTab = 0 }) {
                     Text(NSLocalizedString("Get started", comment: "invitation"))
                     Image(systemName: "arrow.right.circle")
                 }
@@ -73,6 +73,6 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        WelcomeView(selectedTab: .constant(9))
     }
 }
