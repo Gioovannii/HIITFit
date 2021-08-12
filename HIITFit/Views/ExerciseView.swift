@@ -38,6 +38,10 @@ struct ExerciseView: View {
     let index: Int
     let interval: TimeInterval = 30
     
+    var lastExercise: Bool {
+        index + 1 == Exercise.exercises.count
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
