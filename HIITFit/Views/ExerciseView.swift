@@ -55,6 +55,10 @@ struct ExerciseView: View {
                 
 //                Button(NSLocalizedString("Start/Done", comment: "begin exercise / mark as finished")) { }
                 
+                HStack(spacing: 150) {
+                    Button("Start exercice") {}
+                    Button("Done") {}
+                }
                 .font(.title3)
                 .padding()
                 
