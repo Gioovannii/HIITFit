@@ -61,10 +61,10 @@ struct ExerciseView: View {
                 RatingView()
                     .padding()
                 Spacer()
-                                
+                
                 Button(NSLocalizedString("History", comment: "view user activity")) { }
                     .padding(.bottom)
-
+                
             }
         }
     }
