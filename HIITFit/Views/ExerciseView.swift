@@ -61,7 +61,9 @@ struct ExerciseView: View {
                 
                 HStack(spacing: 150) {
                     Button("Start exercice") {}
-                    Button("Done") {}
+                    Button("Done") {
+                        selectedTab = lastExercise ? 9 : selectedTab + 1
+                    }
                 }
                 .font(.title3)
                 .padding()
