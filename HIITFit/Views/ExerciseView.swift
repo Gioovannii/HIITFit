@@ -57,7 +57,7 @@ struct ExerciseView: View {
                 Text(Date().addingTimeInterval(interval), style: .timer)
                     .font(.system(size: 90))
                 
-//                Button(NSLocalizedString("Start/Done", comment: "begin exercise / mark as finished")) { }
+                //                Button(NSLocalizedString("Start/Done", comment: "begin exercise / mark as finished")) { }
                 
                 HStack(spacing: 150) {
                     Button("Start exercice") {}
