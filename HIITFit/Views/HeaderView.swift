@@ -40,13 +40,17 @@ struct HeaderView: View {
         VStack {
             Text(titleText)
                 .font(.largeTitle)
-            
-            HStack {
-                Image(systemName: "hand.wave")
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
-                Image(systemName: "4.circle")
+            HStack { // 2
+                ForEach(0 ..< Exercise.exercises.count) { index in // 3
+                    
+                    let fill = index == selectedTab ? ".fill" : ""
+                    Image(systemName: "\(index + 1).circle\(fill)")
+                }
+//                Image(systemName: "hand.wave")
+//                Image(systemName: "1.circle")
+//                Image(systemName: "2.circle")
+//                Image(systemName: "3.circle")
+//                Image(systemName: "4.circle")
             }
             .font(.title2)
         }
