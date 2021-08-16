@@ -33,6 +33,7 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @Binding var selectedTab: Int // 1
     let titleText: String
     
     var body: some View {
