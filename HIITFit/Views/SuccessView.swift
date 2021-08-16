@@ -61,7 +61,7 @@ struct SuccessView: View {
 
 struct SuccessView_Previews: PreviewProvider {
     static var previews: some View {
-        SuccessView()
+        SuccessView(selectedTab: .constant(3))
             .previewLayout(.device)
     }
 }
