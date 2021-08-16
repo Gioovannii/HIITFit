@@ -63,15 +63,7 @@ struct ExerciseView: View {
                 HStack(spacing: 150) {
                     Button("Start exercice") {}
                     Button("Done") {
-                        if lastExercise {
-                            showSuccess.toggle()
-                        } else {
-                            selectedTab += 1
-                        }
-                    }
-                    .sheet(isPresented: $showSuccess)
-                    {
-                        SuccessView()
+                        selectedTab = lastExercise ? 9 : selectedTab + 1
                     }
                 }
                 .font(.title3)
