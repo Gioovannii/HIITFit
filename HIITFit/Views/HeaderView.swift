@@ -59,13 +59,11 @@ struct HeaderView: View {
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            HeaderView(titleText: "Squat")
-                .previewLayout(.sizeThatFits)
-            HeaderView(titleText: "Squat")
-                .preferredColorScheme(.dark)
-                .environment(\.sizeCategory, .accessibilityLarge)
-                .previewLayout(.sizeThatFits)
-        }
+        HeaderView(selectedTab: .constant(0), titleText: "Squat")
+            .previewLayout(.sizeThatFits)
+        HeaderView(selectedTab: .constant(1), titleText: "Step Up")
+            .preferredColorScheme(.dark)
+            .environment(\.sizeCategory, .accessibilityLarge)
+            .previewLayout(.sizeThatFits)
     }
 }
