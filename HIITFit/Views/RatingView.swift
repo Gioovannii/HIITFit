@@ -33,7 +33,7 @@
 import SwiftUI
 
 struct RatingView: View {
-    @Binding var rating: Int // 1
+    @Binding var rating: Int // 1 Exercise view pass to Rating view a binding to its State property rating
     let maximumRating = 5 // 2
     
     let onColor = Color.red // 3
@@ -59,7 +59,7 @@ struct RatingView_Previews: PreviewProvider {
         Group {
             RatingView(rating: .constant(3))
                 .previewLayout(.sizeThatFits)
-            RatingView()
+            RatingView(rating: <#Binding<Int>#>)
                 .preferredColorScheme(.dark)
                 .environment(\.sizeCategory, .extraLarge)
                 .previewLayout(.sizeThatFits)
