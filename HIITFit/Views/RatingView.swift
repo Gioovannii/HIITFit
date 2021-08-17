@@ -34,7 +34,7 @@ import SwiftUI
 
 struct RatingView: View {
     @Binding var rating: Int // 1 Exercise view pass to Rating view a binding to its State property rating
-    let maximumRating = 5 // 2
+    let maximumRating = 5 // 2 Most app use 5 level rating system
     
     let onColor = Color.red // 3
     let offcolor = Color.gray
