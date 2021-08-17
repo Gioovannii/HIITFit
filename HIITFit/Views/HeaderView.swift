@@ -46,11 +46,6 @@ struct HeaderView: View {
                     let fill = index == selectedTab ? ".fill" : ""
                     Image(systemName: "\(index + 1).circle\(fill)")
                 }
-//                Image(systemName: "hand.wave")
-//                Image(systemName: "1.circle")
-//                Image(systemName: "2.circle")
-//                Image(systemName: "3.circle")
-//                Image(systemName: "4.circle")
             }
             .font(.title2)
         }
