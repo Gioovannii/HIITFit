@@ -37,6 +37,7 @@ struct RatingView: View {
     let maximumRating = 5 // 2
     
     let onColor = Color.red // 3
+    let offcolor = Color.gray
     
     var body: some View {
         HStack {
