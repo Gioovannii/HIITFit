@@ -36,7 +36,7 @@ struct RatingView: View {
     @Binding var rating: Int // 1 Exercise view pass to Rating view a binding to its State property rating
     let maximumRating = 5 // 2 Most app use 5 level rating system
     
-    let onColor = Color.red // 3
+    let onColor = Color.red // 3 When ratting is an integer between 1 and max rating  the first is on color and remaining off color
     let offcolor = Color.gray
     
     var body: some View {
