@@ -41,7 +41,7 @@ struct RatingView: View {
     
     var body: some View {
         HStack {
-            ForEach(0 ..< maximumRating + 1) { _ in
+            ForEach(0 ..< maximumRating + 1) { index in
                 Image(systemName: "waveform.path.ecg")
                     .foregroundColor(.gray)
                     .font(.largeTitle)
