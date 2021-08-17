@@ -59,7 +59,7 @@ struct RatingView_Previews: PreviewProvider {
         Group {
             RatingView(rating: .constant(3))
                 .previewLayout(.sizeThatFits)
-            RatingView(rating: <#Binding<Int>#>)
+            RatingView(rating: .constant(3))
                 .preferredColorScheme(.dark)
                 .environment(\.sizeCategory, .extraLarge)
                 .previewLayout(.sizeThatFits)
