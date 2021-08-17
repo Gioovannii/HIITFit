@@ -33,8 +33,10 @@
 import SwiftUI
 
 struct RatingView: View {
-    @Binding var rating: Int
-    let maximumRating = 5
+    @Binding var rating: Int // 1
+    let maximumRating = 5 // 2
+    
+    let onColor = Color.red // 3
     
     var body: some View {
         HStack {
