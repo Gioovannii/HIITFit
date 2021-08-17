@@ -45,7 +45,7 @@ struct RatingView: View {
                 Image(systemName: "waveform.path.ecg")
                     .foregroundColor(index > rating ? offcolor : onColor) // 4
                     
-                    .onTapGesture {
+                    .onTapGesture { // 5
                         rating = index
                 }
             }
