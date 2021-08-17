@@ -36,7 +36,7 @@ import AVKit
 struct ExerciseView: View {
     @Binding var selectedTab: Int
     @State private var showSuccess = false
-    
+    @State private var rating = 0
     
     let index: Int
     let interval: TimeInterval = 30
