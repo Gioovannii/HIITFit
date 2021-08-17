@@ -47,10 +47,10 @@ struct RatingView: View {
                     
                     .onTapGesture {
                         rating = index
-                    }
-                    .font(.largeTitle)
+                }
             }
         }
+        .font(.largeTitle)
     }
 }
 
@@ -64,6 +64,6 @@ struct RatingView_Previews: PreviewProvider {
                 .environment(\.sizeCategory, .extraLarge)
                 .previewLayout(.sizeThatFits)
         }
-            
+        
     }
 }
