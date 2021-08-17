@@ -43,7 +43,11 @@ struct RatingView: View {
         HStack {
             ForEach(0 ..< maximumRating + 1) { index in
                 Image(systemName: "waveform.path.ecg")
-                    .foregroundColor(.gray)
+                    .foregroundColor(index > rating ? offcolor : onColor) // 4
+                    
+                    .onTapGesture {
+                        rating = index
+                    }
                     .font(.largeTitle)
             }
         }
