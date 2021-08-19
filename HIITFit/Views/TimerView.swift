@@ -50,12 +50,14 @@ struct TimerView: View {
                 } else {
                     timerdone = true
                 }
-            })
+            }
     }
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView(timerdone: .constant(false))
+            
+            .previewLayout(.sizeThatFits)
     }
 }
