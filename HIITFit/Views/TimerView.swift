@@ -35,14 +35,15 @@ import SwiftUI
 struct TimerView: View {
     
     @State private var timeRemaining = 3 // 1
+    @Binding var timerdone: Bool // 2
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("\(timeRemaining)")
     }
 }
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView()
+        TimerView(timerdone: .constant(false))
     }
 }
