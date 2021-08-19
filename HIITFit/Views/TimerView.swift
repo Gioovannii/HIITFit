@@ -46,7 +46,9 @@ struct TimerView: View {
             .onReceive(timer) { _ in // 6
                 
                 if self.timeRemaining > 0 {
-                    
+                    self.timeRemaining -= 1
+                } else {
+                    timerdone = true
                 }
             })
     }
