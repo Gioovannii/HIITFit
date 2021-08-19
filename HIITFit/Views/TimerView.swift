@@ -40,7 +40,12 @@ struct TimerView: View {
         .autoconnect() // 4
     
     var body: some View {
-        Text("\(timeRemaining)")
+        Text("\(timeRemaining)") // 5
+            .font(.system(size: 90, design: .rounded))
+            .padding()
+            .onReceive(timer, perform: { _ in
+                
+            })
     }
 }
 
