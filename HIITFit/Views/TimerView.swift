@@ -34,7 +34,7 @@ import SwiftUI
 
 struct TimerView: View {
     
-    @State private var timeRemaining = 3 // 1
+    @State private var timeRemaining = 3 // 1 number of second for each exercise (3 for testing only)
     @Binding var timerdone: Bool // 2
     let timer = Timer.publish(every: 1, on: .main, in: .common)
         .autoconnect() // 4
