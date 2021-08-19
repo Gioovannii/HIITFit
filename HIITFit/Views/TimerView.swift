@@ -36,6 +36,8 @@ struct TimerView: View {
     
     @State private var timeRemaining = 3 // 1
     @Binding var timerdone: Bool // 2
+    let timer = Timer.publish(every: 1, on: .main, in: .common)
+        .autoconnect()
     
     var body: some View {
         Text("\(timeRemaining)")
