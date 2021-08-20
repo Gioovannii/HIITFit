@@ -36,7 +36,7 @@ struct TimerView: View {
     
     @State private var timeRemaining = 3 // 1 number of second for each exercise (3 for testing only)
     @Binding var timerdone: Bool // 2 Set up start exercise button passing a binding to the timerDone boolean flag that enable done button. Change value of timer done ehen timer reches zero, but this value isn't owned by timer view so it has to be a binding variable.
-    let timer = Timer.publish(every: 1, on: .main, in: .common) 
+    let timer = Timer.publish(every: 1, on: .main, in: .common) // 3 call class method to create a timer publisher 
         .autoconnect() // 4
     
     var body: some View {
