@@ -40,7 +40,7 @@ struct TimerView: View {
         .autoconnect() // 4 connectable Publisher won't start firing upon subscription until call connect. Autoconnect to connect as soon text view subscribe to it 
     
     var body: some View {
-        Text("\(timeRemaining)") // 5
+        Text("\(timeRemaining)") // 5 time view display time remaining in a large round system font  surround by padding 
             .font(.system(size: 90, design: .rounded))
             .padding()
             .onReceive(timer) { _ in // 6
