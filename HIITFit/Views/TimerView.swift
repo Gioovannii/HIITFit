@@ -43,7 +43,7 @@ struct TimerView: View {
         Text("\(timeRemaining)") // 5 time view display time remaining in a large round system font  surround by padding
             .font(.system(size: 90, design: .rounded))
             .padding()
-            .onReceive(timer) { _ in // 6
+            .onReceive(timer) { _ in // 6  on receive modifier subscribes to the timer publisher and updates time remaining as long value is positive 
                 
                 if self.timeRemaining > 0 {
                     self.timeRemaining -= 1
