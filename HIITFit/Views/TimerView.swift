@@ -48,7 +48,7 @@ struct TimerView: View {
                 if self.timeRemaining > 0 {
                     self.timeRemaining -= 1
                 } else {
-                    timerdone = true
+                    timerdone = true // 7 when timer reach 0 set timerdone to true 
                 }
             }
     }
