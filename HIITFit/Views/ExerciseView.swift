@@ -38,7 +38,7 @@ struct ExerciseView: View {
     @State private var showSuccess = false
     @State private var rating = 0
     @State private var timerDone = false
-    @State private var show timer = false
+    @State private var showTimer = false
     
     let index: Int
     let interval: TimeInterval = 30
@@ -59,8 +59,9 @@ struct ExerciseView: View {
                     Text("Couldn't find \(Exercise.exercises[index].videoName).mp4")
                         .foregroundColor(.red)
                 }
-                Text(Date().addingTimeInterval(interval), style: .timer)
-                    .font(.system(size: 90))
+                if showTimer {
+                    TimerView(timerdone: $timerDone)
+                }
                 
                 //                Button(NSLocalizedString("Start/Done", comment: "begin exercise / mark as finished")) { }
                 
