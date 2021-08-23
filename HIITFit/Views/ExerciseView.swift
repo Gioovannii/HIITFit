@@ -69,6 +69,8 @@ struct ExerciseView: View {
                     }
                     Button("Done") {
                         selectedTab = lastExercise ? 9 : selectedTab + 1
+                        timerDone = false
+                        showTimer.toggle()
                     }
                 }
                 .font(.title3)
