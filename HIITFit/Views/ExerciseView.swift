@@ -64,7 +64,9 @@ struct ExerciseView: View {
                 }
                 
                 HStack(spacing: 150) {
-                    Button("Start exercice") {}
+                    Button("Start exercice") {
+                        showTimer.toggle()
+                    }
                     Button("Done") {
                         selectedTab = lastExercise ? 9 : selectedTab + 1
                     }
