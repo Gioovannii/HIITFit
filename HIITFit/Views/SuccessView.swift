@@ -34,6 +34,9 @@ import SwiftUI
 
 struct SuccessView: View {
     @Binding var selectedTab: Int
+    @Environment(\.presentationMode)
+    var presentationMode
+    
     var body: some View {
         ZStack {
             VStack {
