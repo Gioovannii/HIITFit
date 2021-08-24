@@ -68,9 +68,14 @@ struct ExerciseView: View {
                         showTimer.toggle()
                     }
                     Button("Done") {
-                        selectedTab = lastExercise ? 9 : selectedTab + 1
-                        timerDone = false
-                        showTimer.toggle()
+                        if lastExercise {
+                            showSuccess.toggle()
+                        } else {
+                            selectedTab += 1
+                        }
+                    }
+                    .sheet(isPresented: $showSuccess) {
+                        SuccessView()
                     }
                 }
                 .font(.title3)
