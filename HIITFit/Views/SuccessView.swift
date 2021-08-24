@@ -54,7 +54,7 @@ struct SuccessView: View {
             VStack {
                 Spacer()
                 Button("Continue") {
-                    selectedTab = 9
+                    
                 }
                     .padding(.bottom)
             }
