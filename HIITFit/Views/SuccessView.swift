@@ -54,7 +54,7 @@ struct SuccessView: View {
             VStack {
                 Spacer()
                 Button("Continue") {
-                    
+                    presentationMode.wrappedValue.dismiss()
                 }
                     .padding(.bottom)
             }
