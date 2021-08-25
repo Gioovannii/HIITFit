@@ -55,6 +55,7 @@ struct SuccessView: View {
                 Spacer()
                 Button("Continue") {
                     presentationMode.wrappedValue.dismiss()
+                    selectedTab = 9
                 }
                     .padding(.bottom)
             }
