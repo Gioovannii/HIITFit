@@ -75,7 +75,7 @@ struct ExerciseView: View {
                         }
                     }
                     .sheet(isPresented: $showSuccess) {
-                        SuccessView()
+                        SuccessView(selectedTab: .constant(index))
                     }
                 }
                 .font(.title3)
@@ -95,7 +95,7 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(selectedTab: .constant(1), index: 0)
+        ExerciseView(selectedTab: .constant(3), index: 3)
             .previewLayout(.sizeThatFits)
     }
 }
