@@ -75,7 +75,7 @@ struct ExerciseView: View {
                         }
                     }
                     .sheet(isPresented: $showSuccess) {
-                        SuccessView(selectedTab: .constant(index))
+                        SuccessView(selectedTab: $selectedTab)
                     }
                 }
                 .font(.title3)
