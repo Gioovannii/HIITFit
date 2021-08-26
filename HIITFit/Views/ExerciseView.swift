@@ -39,8 +39,7 @@ struct ExerciseView: View {
     @State private var showSuccess = false
     @State private var timerDone = false
     @State private var showTimer = false
-    
-    let index: Int
+    @Binding var selectedTab: Int
     let interval: TimeInterval = 30
     
     var lastExercise: Bool {
