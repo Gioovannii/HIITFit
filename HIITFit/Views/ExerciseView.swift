@@ -66,6 +66,8 @@ struct ExerciseView: View {
                         showTimer.toggle()
                     }
                     Button("Done") {
+                        timerDone = false
+                        showTimer.toggle()
                         if lastExercise {
                             showSuccess.toggle()
                         } else {
