@@ -59,15 +59,18 @@ struct ExerciseView: View {
                         .foregroundColor(.red)
                 }
                 if showTimer {
-                    TimerView(timerdone: $timerDone)
+                    TimerView(timerDone: $timerDone)
                 }
+                
                 HStack(spacing: 150) {
                     Button("Start exercice") {
                         showTimer.toggle()
                     }
+                    
                     Button("Done") {
                         timerDone = false
                         showTimer.toggle()
+                        
                         if lastExercise {
                             showSuccess.toggle()
                         } else {
