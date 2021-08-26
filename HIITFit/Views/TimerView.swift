@@ -35,7 +35,7 @@ import SwiftUI
 struct TimerView: View {
     
     @State private var timeRemaining = 3 // 1 number of second for each exercise (3 for testing only)
-    @Binding var timerdone: Bool // 2 Set up start exercise button passing a binding to the timerDone boolean flag that enable done button. Change value of timer done ehen timer reches zero, but this value isn't owned by timer view so it has to be a binding variable.
+    @Binding var timerDone: Bool // 2 Set up start exercise button passing a binding to the timerDone boolean flag that enable done button. Change value of timer done ehen timer reches zero, but this value isn't owned by timer view so it has to be a binding variable.
     let timer = Timer.publish(every: 1, on: .main, in: .common) // 3 call class method to create a timer publisher that publishes event every 1 seconds
         .autoconnect() // 4 connectable Publisher won't start firing upon subscription until call connect. Autoconnect to connect as soon text view subscribe to it 
     
