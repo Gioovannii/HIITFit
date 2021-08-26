@@ -58,8 +58,9 @@ struct ExerciseView: View {
                     Text("Couldn't find \(Exercise.exercises[index].videoName).mp4")
                         .foregroundColor(.red)
                 }
-                Text(Date().addingTimeInterval(interval), style: .timer)
-                    .font(.system(size: 90))
+                if showTimer {
+                    TimerView(timerdone: $timerDone)
+                }
                 HStack(spacing: 150) {
                     Button("Start exercice") {
                         showTimer.toggle()
