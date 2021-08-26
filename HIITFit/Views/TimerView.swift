@@ -48,7 +48,7 @@ struct TimerView: View {
                 if self.timeRemaining > 0 {
                     self.timeRemaining -= 1
                 } else {
-                    timerdone = true // 7 when timer reach 0 set timerdone to true 
+                    timerDone = true // 7 when timer reach 0 set timerdone to true
                 }
             }
     }
@@ -56,7 +56,7 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(timerdone: .constant(false))
+        TimerView(timerDone: .constant(false))
             
             .previewLayout(.sizeThatFits)
     }
