@@ -35,6 +35,8 @@ import AVKit
 
 struct ExerciseView: View {
     @State private var rating = 0
+    @State private var showHistory = false
+    @State private var showSuccess = false
     @State private var timerDone = false
     @State private var showTimer = false
     
