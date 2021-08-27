@@ -85,7 +85,6 @@ struct ExerciseView: View {
                 .font(.title3)
                 .padding()
                 
-                Spacer()
                 RatingView(rating: $rating)
                     .padding()
                 
