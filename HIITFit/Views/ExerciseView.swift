@@ -58,9 +58,6 @@ struct ExerciseView: View {
                     Text("Couldn't find \(Exercise.exercises[index].videoName).mp4")
                         .foregroundColor(.red)
                 }
-                if showTimer {
-                    TimerView(timerDone: $timerDone)
-                }
                 
                 HStack(spacing: 150) {
                     Button("Start exercice") {
