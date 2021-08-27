@@ -91,8 +91,6 @@ struct ExerciseView: View {
                 RatingView(rating: $rating)
                     .padding()
                 
-                Spacer()
-                
                 Button(NSLocalizedString("History", comment: "view user activity")) {
                     showHistory.toggle()
                 }
