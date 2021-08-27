@@ -82,6 +82,12 @@ struct ExerciseView: View {
                 .font(.title3)
                 .padding()
                 
+                if showTimer {
+                    TimerView(timerDone: $timerDone)
+                }
+                
+                Spacer()
+
                 RatingView(rating: $rating)
                     .padding()
                 
