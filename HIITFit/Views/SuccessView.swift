@@ -57,7 +57,7 @@ struct SuccessView: View {
                     presentationMode.wrappedValue.dismiss()
                     selectedTab = 9
                 }
-                    .padding(.bottom)
+                .padding(.bottom)
             }
         }
     }
