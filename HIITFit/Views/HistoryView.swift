@@ -44,7 +44,7 @@ struct HistoryView: View {
     var body: some View {
         ZStack(alignment: .topTrailing) {
             Button(action:{
-                showHistory.toggle() }) {
+                    showHistory.toggle() }) {
                 Image(systemName: "xmark.circle")
             }
             .font(.title)
