@@ -97,7 +97,7 @@ struct ExerciseView: View {
                 .sheet(isPresented: $showHistory) {
                     HistoryView(showHistory: $showHistory)
                 }
-                    .padding(.bottom)
+                .padding(.bottom)
                 
             }
         }
