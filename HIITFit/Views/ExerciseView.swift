@@ -87,7 +87,7 @@ struct ExerciseView: View {
                 }
                 
                 Spacer()
-
+                
                 RatingView(rating: $rating)
                     .padding()
                 
