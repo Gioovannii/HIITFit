@@ -38,7 +38,7 @@ struct ExerciseDay: Identifiable {
     var exercises = [String]()
 }
 
-struct HistoryStore {
+class HistoryStore {
     var exerciseDays = [ExerciseDay]()
     
     init() {
