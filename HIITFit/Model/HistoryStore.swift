@@ -39,6 +39,7 @@ struct ExerciseDay: Identifiable {
 }
 
 class HistoryStore: ObservableObject {
+    @Published var exerciseDays = [Exercise]()
     
     init() {
         #if DEBUG
