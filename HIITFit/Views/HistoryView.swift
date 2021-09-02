@@ -76,6 +76,6 @@ struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
         HistoryView(showHistory: .constant(true))
             .previewLayout(.sizeThatFits)
-        
+            .environmentObject(HistoryStore())
     }
 }
