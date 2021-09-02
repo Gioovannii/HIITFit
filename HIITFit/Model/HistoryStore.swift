@@ -55,7 +55,7 @@ class HistoryStore: ObservableObject {
             exerciseDays[0].exercises.append(exerciseName)
             
         } else {
-        
+            exerciseDays.insert(ExerciseDay(date: today, exercises: [exerciseName]), at: 0)
         }
     }
 }
