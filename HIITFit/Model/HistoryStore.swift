@@ -46,4 +46,8 @@ class HistoryStore: ObservableObject {
         createDevData()
         #endif
     }
+    
+    func adddoneExercise(_ exerciseName: String) {
+        let today = Date()
+    }
 }
