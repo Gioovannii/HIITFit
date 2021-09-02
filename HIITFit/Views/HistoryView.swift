@@ -34,7 +34,6 @@ import SwiftUI
 
 struct HistoryView: View {
     @Binding var showHistory: Bool
-    let history = HistoryStore()
     
     let exercises1 = ["Squat", "Step Up", "Burpee", "Sun Salute"]
     let exercises2 = ["Squat", "Step Up", "Burpee"]
