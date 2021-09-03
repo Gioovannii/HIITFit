@@ -75,6 +75,8 @@ struct ExerciseView: View {
                         } else {
                             selectedTab += 1
                         }
+                        
+                        history.adddoneExercise(Exercise.exercises[index].exerciseName)
                     }
                     .disabled(!timerDone)
                     .sheet(isPresented: $showSuccess) {
