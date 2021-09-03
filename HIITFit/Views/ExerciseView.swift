@@ -40,6 +40,8 @@ struct ExerciseView: View {
     @State private var timerDone = false
     @State private var showTimer = false
     @Binding var selectedTab: Int
+    @EnvironmentObject var history: HistoryStore
+    
     let index: Int
     
     var lastExercise: Bool {
